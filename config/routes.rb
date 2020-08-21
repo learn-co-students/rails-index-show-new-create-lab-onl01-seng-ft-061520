@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
+  resources :coupons, only: [:index, :show, :new, :create]
+            # get '/coupons', to: 'coupons#index', as: "animal"     <<= explicit
+            # get '/coupons/:id', to: 'coupons#show', as: "animals" <<= implicitly without (as:)
+            # # get '/coupons/new', to: 'coupons#new'
+            # post '/coupons', to: 'coupons#create'
+
+            # get '/coupons/:id/edit', to: 'coupons#edit'
+            # patch '/coupons/:id', to: 'coupons#update'
+            # delete '/coupons/:id', to: 'coupons#destroy' 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+
+  
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
