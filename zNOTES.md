@@ -35,9 +35,11 @@ NOTE List all available routes with:    localhost:3000/rails/info/routes
 
 STEP 5: Build out the index & show erb pages so that they display data
 
-STEP 6: <h1>Coupons#new</h1>
-        <p>Find me in app/views/coupons/new.html.erb</p>
+STEP 6: Line 13 in File app/views/coupons/new.html.erb
+    Solution had an authenticity_token:
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
-
+STEP 7: Did NOT need a create erb file
+        Create is a post method
 
 
